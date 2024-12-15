@@ -1,0 +1,24 @@
+﻿<Window x:Class="UI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UI"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800"
+>
+	<Grid>
+		<Button Height="39" Width="40" VerticalAlignment="Top" HorizontalAlignment="Left" BorderBrush="{x:Null}" Foreground="{x:Null}" Click="addBook_Button_Click">
+			<Button.Background>
+				<ImageBrush ImageSource="/free-icon-material-4176691.png"/>
+			</Button.Background>
+
+		</Button>
+		<ScrollViewer Margin="10,39,10,10" >
+            <StackPanel x:Name="bookIconsStack">
+				
+			</StackPanel>
+		</ScrollViewer>
+
+    </Grid>
+</Window>

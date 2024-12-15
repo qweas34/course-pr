@@ -1,0 +1,15 @@
+﻿<Window x:Class="UI.windows.PDF_readWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UI.windows" xmlns:wpf="clr-namespace:CefSharp.Wpf;assembly=CefSharp.Wpf"
+        mc:Ignorable="d"
+        Title="PDF_readWindow" Height="768" Width="1024">
+    <Grid  >
+
+        
+        <wpf:ChromiumWebBrowser Loaded="ChromiumWebBrowser_Loaded" x:Name="Browser" ></wpf:ChromiumWebBrowser>
+
+    </Grid>
+</Window>

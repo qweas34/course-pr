@@ -1,0 +1,49 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <Platforms>AnyCPU;x64</Platforms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="C:\Users\admin\.nuget\packages\pdfiumviewer.native.x86.v8-xfa\2018.4.8.256\Build\x86\pdfium.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="elems\free-icon-book-828370.png" />
+    <None Remove="elems\free-icon-cover-5526222.png" />
+    <None Remove="elems\free-icon-delete-14360493.png" />
+    <None Remove="free-icon-material-4176691.png" />
+    <None Remove="static res\free-icon-book-828370.png" />
+    <None Remove="static res\free-icon-cover-5526222.png" />
+    <None Remove="static res\free-icon-delete-14360493.png" />
+    <None Remove="static res\free-icon-material-4176691.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CefSharp.Common" Version="131.3.10" />
+    <PackageReference Include="CefSharp.Wpf.NETCore" Version="131.3.10" />
+    <PackageReference Include="itext7" Version="9.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="9.0.0" />
+    <PackageReference Include="PDFiumSharpV2" Version="1.1.4" />
+    <PackageReference Include="PdfiumViewer.Native.x86.v8-xfa" Version="2018.4.8.256" />
+    <PackageReference Include="System.Drawing.Common" Version="9.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="elems\free-icon-book-828370.png" />
+    <Resource Include="elems\free-icon-cover-5526222.png" />
+    <Resource Include="elems\free-icon-delete-14360493.png" />
+    <Resource Include="free-icon-material-4176691.png" />
+    <Resource Include="static res\free-icon-book-828370.png" />
+    <Resource Include="static res\free-icon-cover-5526222.png" />
+    <Resource Include="static res\free-icon-delete-14360493.png" />
+    <Resource Include="static res\free-icon-material-4176691.png" />
+  </ItemGroup>
+
+</Project>
